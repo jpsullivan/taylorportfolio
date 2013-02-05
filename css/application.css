@@ -64,7 +64,11 @@ body {
   .masthead .contact-info {
 
   }
-    .masthead .contact-info .btn-twitter {
+    .masthead .contact-info a, .masthead .contact-info button, .masthead .contact-info span {
+      float:right;
+      clear:both;
+    }
+    .masthead .contact-info span {
       margin-top:5px;
     }
 
@@ -113,7 +117,7 @@ body {
     margin-left:10px;
   }
   .marketing .job {
-    margin-left:0;
+    margin: 0 0 8px 0;
   }
     .marketing .job .heading {
       margin-bottom:5px;
@@ -125,6 +129,10 @@ body {
         font-weight:300;
         font-size:16px;
         color:#777;
+      }
+      .marketing .job .heading span.date {
+        font-style:italic;
+        color:#9c9c9c;
       }
       .marketing .job .heading span.position {
         margin-top:0;
