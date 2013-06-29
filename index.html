@@ -9,9 +9,10 @@
 	<meta name="author" content="">
 
 	<!-- Le styles -->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,700|Droid+Serif:400,400italic' rel='stylesheet' type='text/css'>
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="css/bootstrap.lightbox.min.css" rel="stylesheet">
 	<link href="css/application.css" rel="stylesheet">
 
 	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -25,15 +26,21 @@
 
 		<div class="masthead">
 			<div class="contact-info pull-right">
-				<button class="btn">Download PDF</button>
-				<div class="btn-twitter">
-					<a href="https://twitter.com/That_Guy_Taylor" class="twitter-follow-button" data-show-count="false">Follow @That_Guy_Taylor</a>
-					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-				</div>
+				<ul>
+					<li class="email">
+						<a href="mailto:The.Taylor.Russell@gmail.com">Hire Me</a>
+					</li>
+					<li class="reel">
+						<a href="#">Reel</a>
+					</li>
+					<li class="portfolio">
+						<a href="#">Portfolio</a>
+					</li>
+				</ul>
 			</div>
 			<div class="">
 				<h3 class="muted">Taylor Russell</h3>
-				<h4>Animator, Goofbawl</h4>
+				<h4>Animator, Illustrator</h4>
 			</div>
 		</div>
 
@@ -46,8 +53,8 @@
 						<img src="img/shots/01.png" alt="">
 						<div class="container">
 							<div class="carousel-caption">
-								<h1>MC Straw.B</h1>
-								<p class="lead">2012</p>
+								<h1>Dawg Days</h1>
+								<p class="lead">2013</p>
 							</div>
 						</div>
 					</div>
@@ -55,7 +62,7 @@
 						<img src="img/shots/02.png" alt="">
 						<div class="container">
 							<div class="carousel-caption">
-								<h1>Apps4Virginia</h1>
+								<h1>MC Straw.B</h1>
 								<p class="lead">2012</p>
 							</div>
 						</div>
@@ -87,14 +94,23 @@
 							</div>
 						</div>
 					</div>
+					<div class="item">
+						<img src="img/shots/06.png" alt="">
+						<div class="container">
+							<div class="carousel-caption">
+								<h1>Apps4Virginia</h1>
+								<p class="lead">2012</p>
+							</div>
+						</div>
+					</div>
 				</div>
 				<a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
 				<a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
 			</div><!-- /.carousel -->
 			<p class="lead">
-				I'm a Richmond-based animator who loves injecting seemingly boring projects with life and personality.
+				I'm a Fairfax, Virginia-based animator and illustrator. <br/>Here are some of the things I've worked on.
 			</p>
-			<a href="#myModal" role="button" class="btn btn-large btn-success" data-toggle="modal">View my demo reel</a>
+			<a href="#" role="button" id="viewDemoReels" class="btn btn-large btn-success">View my demo reels</a>
 		</div>
 
 		<hr>
@@ -145,7 +161,7 @@
 			</div>
 			<div class="span5">
 				<dl class="dl-horizontal">
-					<dt>Other shit</dt>
+					<dt>Misc.</dt>
 					<dd>
 						<ul class="unstyled">
 							<li>Adobe Flash</li>
@@ -188,6 +204,95 @@
 
 		<hr>
 
+		<div id="reels" class="row-fluid marketing">
+			<h3>Demo Reels</h3>
+			<div class="span12" style="margin-left:0;">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#tab1" data-toggle="tab">Video Reel</a></li>
+					<li><a href="#tab2" data-toggle="tab">Vocal Reel</a></li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane active" id="tab1">
+						<iframe width="700" height="394" src="//www.youtube.com/embed/6UN7fMbi-r8" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div class="tab-pane" id="tab2">
+					  <p>Howdy, I'm in Section 2.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<hr>
+
+		<div id="gallery" class="row-fluid marketing">
+			<h3>Portfolio</h3>
+			<ul class="container-narrow">
+		        <li class="span3">
+		          <a data-toggle="lightbox" href="#lightboxOne">
+		            <img src="http://www.michieldegraaf.com/img/case-tone.jpg" alt="Tone">
+		            <div>
+		              <strong>Tone</strong>
+		              UI, UX <span>&amp;</span> Branding
+		            </div>
+		          </a>
+		        </li>
+		        <li class="span3">
+		          <a href="karma">
+		            <img src="http://www.michieldegraaf.com/img/case-karma.jpg" alt="Karma">
+		            <div>
+		              <strong>Karma</strong>
+		              Lead design <span>&amp;</span> Front-end
+		            </div>
+		          </a>
+		        </li>
+		        <li class="span3">
+		          <a href="madeinamsterdam">
+		            <img src="http://www.michieldegraaf.com/img/case-mams.jpg" alt="madeinamsterdam">
+		            <div>
+		              <strong>Made in Amsterdam</strong>
+		              Branding <span>&amp;</span> Design
+		            </div>
+		          </a>
+		        </li>
+		        <li class="span3">
+		          <a href="soocial">
+		            <img src="http://www.michieldegraaf.com/img/case-soocial.jpg" alt="Soocial">
+		            <div>
+		              <strong>Soocial</strong>
+		              Design <span>&amp;</span> Front-end
+		            </div>
+		          </a>
+		        </li>
+		        <li class="span3">
+		          <a href="twithor">
+		            <img src="http://www.michieldegraaf.com/img/case-twithor.jpg" alt="Twithor">
+		            <div>
+		              <strong>Twithor</strong>
+		              Concept <span>&amp;</span> Design
+		            </div>
+		          </a>
+		        </li>
+		        <li class="span3">
+		          <a href="misc">
+		            <img src="http://www.michieldegraaf.com/img/case-various.jpg" alt="Misc">
+		            <div>
+		              <strong>Misc</strong>
+		              Design
+		            </div>
+		          </a>
+		        </li>
+			</ul>
+
+			<div id="lightboxOne" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
+				<div class='lightbox-content'>
+					<img src="http://www.michieldegraaf.com/img/tone/3-tone-app.png">
+					<div class="lightbox-caption"><p>Your caption here</p></div>
+				</div>
+			</div>
+		</div>
+
+		<hr>
+
 		<div class="footer">
 			<p>&copy; Taylor Russell 2013</p>
 		</div>
@@ -197,7 +302,7 @@
 	<!-- Modal -->
 	<div id="myModal" class="modal video-modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	  <div class="video-modal-body">
-	    <iframe src="http://player.vimeo.com/video/37314539" width="500" height="369" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/37314539">Taylor Russell Demo Reel 2011</a> from <a href="http://vimeo.com/user8722588">Taylor Russell</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+	    <!-- <iframe src="http://player.vimeo.com/video/37314539" width="500" height="369" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/37314539">Taylor Russell Demo Reel 2011</a> from <a href="http://vimeo.com/user8722588">Taylor Russell</a> on <a href="http://vimeo.com">Vimeo</a>.</p> -->
 	  </div>
 	</div>
 
@@ -206,7 +311,9 @@
 	<!-- Placed at the end of the document so the pages load faster -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/plugin.overlay.js"></script>
+	<script src="js/bootstrap.lightbox.min.js"></script>
+	<script src="js/jquery.scrollTo.min.js"></script>
+	<!-- <script src="js/plugin.overlay.js"></script> -->
 
 	<script src="js/application.js"></script>
 
